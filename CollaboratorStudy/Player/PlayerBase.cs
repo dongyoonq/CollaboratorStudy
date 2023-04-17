@@ -24,16 +24,24 @@ namespace CollaboratorStudy.Player
             set { name = value; }
         }
 
-        Item.Item[] inventory;
-        public Item.Item[] INVENTORY {
+        Dictionary<Items, int> inventory;
+        public Dictionary<Items, int> INVENTORY {
             get { return inventory; }
             set { inventory = value; }
         }
 
-        monster[] partners;
-        public monster[] PARTNERS {
+        MonsterClass[] partners;
+        public MonsterClass[] PARTNERS {
             get { return partners; }
             set { partners = value; }
+        }
+
+        public PlayerBase(int id, string name)
+        {
+            ID = id;
+            NAME = name;
+            INVENTORY = new Dictionary<Items, int>();
+            partners = new MonsterClass[6];
         }
     }
 }
