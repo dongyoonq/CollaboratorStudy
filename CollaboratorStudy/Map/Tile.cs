@@ -9,7 +9,6 @@ namespace Dongyoon
         protected int size; 
         protected bool IsCollisonTile;
 
-        protected abstract Tile CreateTile(int size);
-        protected abstract Tile SetCollison(bool tf);
+        protected abstract void SetCollison();
     }
 }
