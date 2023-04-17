@@ -9,14 +9,14 @@ namespace Dongyoon
         // 맵 클래스를 만드는 곳입니다.
         private int Width;
         private int Height;
-        Tile[,] tile;
+        private Tile[,] tile;
 
-        public Map(int width, int height)
+        protected Map(int width, int height)
         {
-            this.Width = width;
-            this.Height = height;
-            this.tile = new Tile[Width, Height];
+            Width = width;
+            Height = height;
         }
 
+        abstract public Map CreateMap(int width, int height);
     }
 }
