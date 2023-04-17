@@ -10,10 +10,5 @@ namespace Dongyoon
         {
 
         }
-
-        public override Map CreateMap(int width, int height)
-        {
-            return new StartMap(width, height);
-        }
     }
 }
