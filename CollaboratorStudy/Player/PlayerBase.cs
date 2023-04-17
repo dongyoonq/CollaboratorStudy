@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CollaboratorStudy.Item;
 
 namespace CollaboratorStudy.Player
 {
@@ -9,6 +10,17 @@ namespace CollaboratorStudy.Player
     /// </summary>
     internal class PlayerBase
     {
-        
+        int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        string name;
+        public string NAME{
+            get { return name; }
+            set { name = value; }
+        }
     }
 }
