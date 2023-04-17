@@ -58,17 +58,25 @@ namespace CollaboratorStudy.Player
         }
 
         /// <summary>
-        /// 플레이어 생성자.
+        /// 플레이어 생성자 1
+        /// 인벤토리, 파트너 포켓몬은 자동으로 초기화
+        /// </summary>
+        public PlayerBase()
+        {
+            INVENTORY = new Dictionary<Items, int>();
+            partners = new MonsterClass[6];
+        }
+
+        /// <summary>
+        /// 플레이어 생성자 2
         /// 인벤토리, 파트너 포켓몬은 자동으로 초기화
         /// </summary>
         /// <param name="id">플레이어 아이디</param>
         /// <param name="name">플레이어 이름</param>
-        public PlayerBase(int id, string name, APPEARANCE appearnce)
+        public PlayerBase(int id, string name, APPEARANCE appearnce) : base()
         {
             ID = id;
             NAME = name;
-            INVENTORY = new Dictionary<Items, int>();
-            partners = new MonsterClass[6];
             APPEARANCE = appearnce;
         }
     }
