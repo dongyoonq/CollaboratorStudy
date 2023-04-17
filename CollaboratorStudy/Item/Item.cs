@@ -40,6 +40,8 @@ namespace CollaboratorStudy.Item
 
         // 아이템 진주 생성
 
+        // 드랍아이템 발견시 플레이어가 주울 수 있도록 pick생성
+
         // 랜덤아이템 드랍
         public void RandomDropItem()
         {
