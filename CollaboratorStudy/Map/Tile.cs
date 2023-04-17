@@ -4,9 +4,14 @@ using System.Text;
 
 namespace Dongyoon
 {
-    internal class Tile
+    abstract class Tile
     {
-        bool IsCollisonTile;
+        protected int size; 
+        protected bool IsCollisonTile;
 
+        protected Tile(int size)
+        {
+            this.size = size;
+        }
     }
 }
