@@ -10,5 +10,7 @@ namespace CollaboratorStudy.Item
     internal class Item
     {
         // 아이템을 야무지게 만들었따
+
+        // 플레이어가 아이템을 사용할 수 있게 만들었습니다.
     }
 }
