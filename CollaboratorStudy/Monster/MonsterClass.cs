@@ -6,31 +6,36 @@ using System.Threading.Channels;
 
 namespace CollaboratorStudy.Monster
 {
-    internal class monster      // 몬스터 클래스입니다.
+    internal class MonsterClass      // 몬스터 클래스입니다.
     {
         public string name { get; set; }
         public int age { get; set; }
         public int hp { get; set; }
 
-        public monster()        // 몬스터 클래스의 생성자입니다.
+        public MonsterClass()        // 몬스터 클래스의 생성자입니다.
         {
-            name = "피카츄";
+            name = "포켓몬";
             age = 5;
             hp = 100;
 
+        }
+
+        public void Move()          // 이동 함수 추가
+        {
+            Console.WriteLine(name + "이 움직입니다.");
+        }
+
+        public virtual void TakeDamage()        // 피격 함수 추가
+        {
+            Console.WriteLine(name + "이 데미지를 받습니다.");
         }
 
         public void Hit()       // 공격 함수입니다.
         {
             int damage = 20;
             hp -= damage;
-        }
-        
-        public void pikapika()      
-        {
-            Console.WriteLine("피카츄 라이츄 파이리 꼬부기");
-        }
-
+            Console.WriteLine(name + "이" + damage + "만큼의 데미지를 입혔습니다!");
+        } 
         
     }
 }
