@@ -11,6 +11,14 @@ namespace CollaboratorStudy.Monster
         public string name { get; set; }
         public int age { get; set; }
         public int hp { get; set; }
+
+        public monster()        // 몬스터 클래스의 생성자입니다.
+        {
+            name = "피카츄";
+            age = 5;
+            hp = 100;
+
+        }
         
         public void pikapika()      
         {
