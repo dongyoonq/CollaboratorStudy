@@ -19,6 +19,12 @@ namespace CollaboratorStudy.Monster
             hp = 100;
 
         }
+
+        public void Hit()       // 공격 함수입니다.
+        {
+            int damage = 20;
+            hp -= damage;
+        }
         
         public void pikapika()      
         {
