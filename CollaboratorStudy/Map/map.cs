@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Dongyoon
 {
-    abstract class Map
+    class Map
     {
         // 맵 클래스를 만드는 곳입니다.
         private int Width;
@@ -16,7 +16,5 @@ namespace Dongyoon
             Width = width;
             Height = height;
         }
-
-        abstract public Map CreateMap(int width, int height);
     }
 }

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Dongyoon
 {
-    class StartMap : Map
+    internal class Obstacle : Tile
     {
-        public StartMap(int width, int height) : base(width, height)
+        public Obstacle(int size) : base(size)
         {
-
+            IsCollisonTile = false;
         }
     }
 }

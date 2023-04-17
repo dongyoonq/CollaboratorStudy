@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Dongyoon
 {
-    abstract class Tile
+    class Tile
     {
         protected int size; 
         protected bool IsCollisonTile;
