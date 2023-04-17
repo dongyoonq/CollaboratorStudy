@@ -7,7 +7,7 @@ namespace CollaboratorStudy.Item
     /// <summary>
     /// 아이템의 종류가 들어있습니다.
     /// </summary>
-    internal class Item
+    internal class Items
     {
         // 아이템을 야무지게 만들었따
 
