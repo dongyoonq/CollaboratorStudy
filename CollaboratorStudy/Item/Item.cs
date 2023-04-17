@@ -27,6 +27,14 @@ namespace CollaboratorStudy.Item
             this.name = "작은구슬";
             this.price = 1500;
         }
+
+        // 아이템 천상의피리 생성
+
+        // 아이템 물의돌 생성
+
+        // 아이템 불의돌 생성
+
+
         // 랜덤아이템 드랍
         public void RandomDropItem()
         {
@@ -49,5 +57,6 @@ namespace CollaboratorStudy.Item
             Random randomItems = new Random();
             RandomDropItem();
         }
+        
     }
 }
