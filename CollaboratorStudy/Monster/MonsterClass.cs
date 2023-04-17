@@ -25,6 +25,11 @@ namespace CollaboratorStudy.Monster
             Console.WriteLine(name + "이 움직입니다.");
         }
 
+        public virtual void TakeDamage()        // 피격 함수 추가
+        {
+            Console.WriteLine(name + "이 데미지를 받습니다.");
+        }
+
         public void Hit()       // 공격 함수입니다.
         {
             int damage = 20;
