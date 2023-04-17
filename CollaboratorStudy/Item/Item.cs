@@ -34,6 +34,11 @@ namespace CollaboratorStudy.Item
 
         // 아이템 불의돌 생성
 
+        // 아이템 전기의돌 생성
+
+        // 아이템 바위의돌 생성
+
+        // 아이템 진주 생성
 
         // 랜덤아이템 드랍
         public void RandomDropItem()
