@@ -50,18 +50,26 @@ namespace CollaboratorStudy.Player
             set { partners = value; }
         }
 
+        APPEARANCE appearnce;
+        public APPEARANCE APPEARANCE
+        {
+            get { return appearnce; }
+            set { appearnce = value; }
+        }
+
         /// <summary>
         /// 플레이어 생성자.
         /// 인벤토리, 파트너 포켓몬은 자동으로 초기화
         /// </summary>
         /// <param name="id">플레이어 아이디</param>
         /// <param name="name">플레이어 이름</param>
-        public PlayerBase(int id, string name)
+        public PlayerBase(int id, string name, APPEARANCE appearnce)
         {
             ID = id;
             NAME = name;
             INVENTORY = new Dictionary<Items, int>();
             partners = new MonsterClass[6];
+            APPEARANCE = appearnce;
         }
     }
 }
