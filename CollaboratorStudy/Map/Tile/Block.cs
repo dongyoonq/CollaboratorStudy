@@ -6,7 +6,7 @@ namespace Dongyoon
 {
     internal class Block : Tile
     {
-        protected override void SetCollison()
+        public Block(int size) : base(size)
         {
             IsCollisonTile = false;
         }
