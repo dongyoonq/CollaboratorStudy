@@ -20,6 +20,11 @@ namespace CollaboratorStudy.Monster
 
         }
 
+        public void Move()          // 이동 함수 추가
+        {
+            Console.WriteLine(name + "이 움직입니다.");
+        }
+
         public void Hit()       // 공격 함수입니다.
         {
             int damage = 20;
