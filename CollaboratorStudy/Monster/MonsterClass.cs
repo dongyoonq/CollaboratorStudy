@@ -14,7 +14,7 @@ namespace CollaboratorStudy.Monster
 
         public MonsterClass()        // 몬스터 클래스의 생성자입니다.
         {
-            name = "피카츄";
+            name = "포켓몬";
             age = 5;
             hp = 100;
 
