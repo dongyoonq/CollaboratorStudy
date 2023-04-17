@@ -34,6 +34,7 @@ namespace CollaboratorStudy.Monster
         {
             int damage = 20;
             hp -= damage;
+            Console.WriteLine(name + "이" + damage + "만큼의 데미지를 입혔습니다!");
         } 
         
     }
