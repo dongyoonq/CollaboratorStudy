@@ -9,6 +9,9 @@ namespace Dongyoon
         protected int size; 
         protected bool IsCollisonTile;
 
-        protected abstract void SetCollison();
+        protected Tile(int size)
+        {
+            this.size = size;
+        }
     }
 }
